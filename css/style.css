@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Krona+One&family=Montserrat&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+:root{
+    --branco-principa: #ffffff;
+    --cinza-secundario: #c0c0c0;
+    --botao-azul: #167bf7;
+    --cor-fundo: #00030c;
+    --fonte-principal: 'inter';
+}
+
+body{
+    background-color: var(--cor-fundo);
+    color: var(--branco-principa);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+.principal{
+    background-image: url("../img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.conteiner{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.conteiner__caixa{
+    margin: 0 6rem;
+}
+
+.conteiner__titulo{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.conteiner__img{
+    margin: 1rem 0 2rem 0;
+}
+
+.conteiner__botao{
+    text-decoration: none;
+    color: var(--branco-principa);
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.botao__secundario{
+    background-color: transparent;
+    border: 2px solid var(--branco-principa);
+}
+
+.conteiner__aviso{
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+.secundario{
+    align-items: center;
+}
+
+.secundario__img{
+    width: 80%;
+    margin: 0 7%;
+}
+
+.conteiner__descricao{
+    padding: 2rem;
+}
+
+.descricao__titulo{
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principa);
+    margin-bottom: 0.1rem;
+}
+
+.descricao__texto{
+    color: var(--cinza-secundario);
+    
+}
+
+.secundario__texto{
+    padding: 0 0 0 3%;
+}
+
+.segundario__botao{
+    display: inline-block;
+    margin: 1rem;
+    
+}
+
+.dispositivos{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 43px;
+    font-weight: 700;
+}
+
+.dispositivos__todos{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   margin: 5%;
+}
+
+.logo{
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+  
+   
+}
+
+.links__links{
+    text-decoration: none;
+    color: var(--branco-principa);
+    margin: 2% 0;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 0,5%;
+
+}
+
+.rodape{
+    color: var(--cinza-secundario);
+    display: flex;
+    text-align: center;
+    font-size: 14px;
+}
+
+.dois{
+    margin: 2%;
+    padding: 0 5%;
+}
+
+@media (max-width: 750px) {
+    
+    .conteiner {
+      grid-template-columns: 100%; 
+    }
+  
+    .conteiner__caixa {
+      margin: 0 3rem; 
+    }
+  
+    .descricao__titulo {
+      font-size: 32px;
+    }
+  
+    .dispositivos {
+      font-size: 32px; 
+      text-align: center;
+    }
+
+    .dispositivos__todos{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+  
+    .links__links {
+      font-size: 14px; 
+      text-align: center;
+      margin: 5% 0;
+
+    }
+
+    
+}
+
+
+ 
+
+  
